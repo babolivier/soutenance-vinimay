@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="reveal.js/css/theme/white.css">
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="res/monokai-sublime.css">
+		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -31,6 +31,12 @@
 					<section>
 						<h1>Vinimay</h1>
 						Réseau social décentralisé
+						<aside class="notes">
+							Joseph
+							<ul>
+								<li>C'est notre projet, plus précisément, notre projet c'est une...</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<h1>Preuve de concept</h1>
@@ -38,12 +44,23 @@
 							<li class="fragment">Repenser la propriété des données</li>
 							<li class="fragment">Décentralisé</li>
 						</ul>
+						<aside class="notes">
+							Joseph
+							<ul>
+								<li>Preuve de concept</li>
+								<li>But = repenser la notion de propriété des données dans une application sociale</li>
+								<li>Le tout de façon décentralisée</li>
+							</ul>
+						</aside>
 					</section>
 				</section>
 				<section>
 					<section>
 						<h1>Décentralisé</h1>
 						<p>Quand un seul serveur ne suffit plus</p>
+						<aside class="notes">
+							Brendan
+						</aside>
 					</section>
 					<section>
 						<h2>Plateforme centralisée</h2>
@@ -69,6 +86,15 @@
 								<small>Bob</small>
 							</div>
 						</div>
+						<aside class="notes">
+							Brendan
+							<ul>
+								<li>Plateforme centrale</li>
+								<li>Emplacement unique du point de vue d'Internet</li>
+								<li>Alice y accède pour créer du contenu</li>
+								<li>Bob y accède pour interagir avec ce contenu et celui de ses amis</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<h2>Qu'est-ce que ça vaut ?</h2>
@@ -86,6 +112,15 @@
 								</ul>
 							</li>
 						</ul>
+						<aside class="notes">
+							Brendan
+							<ul>
+								<li>Données 1 seul endroit = plus simple à gérer</li>
+								<li>Accès simplifié car une seule adresse</li>
+								<li>Pt d'attaque unique pour toucher tout le réseau, et 1 seule entité sur laquelle faire pression</li>
+								<li>Utilisateur pas propriétaire des données qu'il produit</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<h2>Plateforme décentralisée</h2>
@@ -125,6 +160,16 @@
 								<small>Bob</small>
 							</div>
 						</div>
+						<aside class="notes">
+							Brendan
+							<ul>
+								<li>Alice utilise son propre serv pour créer son contenu + interagir avec celui des autres</li>
+								<li>Serv géré par elle ou tiers de confiance</li>
+								<li>Bob de même</li>
+								<li>Contenu produit sur serveur de l'auteur</li>
+								<li>Ici config 2 personnes / 2 servs, mais possible config 1000+ serveurs interagissant entre eux</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<h2>Qu'est-ce que ça vaut ?</h2>
@@ -142,36 +187,39 @@
 								</ul>
 							</li>
 						</ul>
+						<aside class="notes">
+							Brendan
+							<ul>
+								<li>Attaquer : Autant d'adresses / emplacements à attaquer que de serveurs, travail d'identification de chacun très difficile</li>
+								<li>Difficile à appréhender : Pour utilisateur non averti</li>
+								<li>Comp tech : Notamment pour install serv</li>
+							</ul>
+						</aside>
 					</section>
 				</section>
 				<section>
 					<section>
-						<h1>Solutions existantes</h1>
-					</section>
-					<section>
-						<h2>Diaspora*</h2>
-						<img src="assets/diaspora.png" alt="Diaspora*" class="plain" width="700px">
+						<h2>Solutions existantes</h2>
+						<img src="assets/diaspora.png" alt="Diaspora*" class="plain" height="300px">
+						<img src="assets/mastodon.png" alt="Mastodon" class="plain" height="300px">
+						<small style="font-style:italic">Diaspora* à gauche, Mastodon à droite</small>
 						<aside class="notes">
-							<ul>
-								<li>Fonctionnement à la Facebook</li>
-								<li>Manque de fonctionnalités</li>
-								<li>Pas d'API publique</li>
-								<li>Développement lent</li>
-								<li>Pas d'intégration de réseaux tiers</li>
-							</ul>
-							Lancé en 2010
+							Joseph
 						</aside>
 					</section>
 					<section>
-						<h2>Mastodon</h2>
-						<img src="assets/mastodon.png" alt="Mastodon" class="plain" width="800px">
+						<h2>Inconvénients</h2>
+						<ul>
+							<li>Difficilement installables</li>
+							<li class="fragment">Pas d'intégration de réseaux tiers</li>
+							<li class="fragment">Pas toujours d'API publique</li>
+						</ul>
 						<aside class="notes">
+							Joseph
 							<ul>
-								<li>Fonctionnement à la Twitter</li>
-								<li>Fédéré</li>
-								<li>Développement rapide</li>
-								<li>Gourmand en ressources</li>
+								<li>Difficilement installables</li>
 								<li>Pas d'intégration de réseaux tiers</li>
+								<li>Pas toujours d'API publique (cas de Diaspora*)</li>
 							</ul>
 						</aside>
 					</section>
@@ -179,25 +227,37 @@
 				<section>
 					<h1>Vinimay</h1>
 					<p>Du mot Hindi &laquo; विनिमय &raquo; (échange)</p>
+					<aside class="notes">
+						Brendan
+					</aside>
 				</section>
 				<section>
 					<section>
 						<h1>Les critères</h1>
+						<aside class="notes">
+							Brendan
+						</aside>
 					</section>
 					<section>
 						<h2>Décentralisé</h2>
+						<aside class="notes">
+							Brendan
+						</aside>
 					</section>
 					<section>
 						<h2>Respectueux</h2>
 						<aside class="notes">
-							Souveraineté des données
+							Brendan
+							<ul>
+								<li>Rendre à l'utilisateur la souveraineté sur ses données</li>
+							</ul>
 						</aside>
 					</section>
 					<section>
 						<h2>Ouvert</h2>
 						<aside class="notes">
+							Brendan
 							<ul>
-								<li>API ouverte et documentée</li>
 								<li>Code publié sous licence libre</li>
 							</ul>
 						</aside>
@@ -205,6 +265,7 @@
 					<section>
 						<h2>Interopérable</h2>
 						<aside class="notes">
+							Brendan
 							<ul>
 								<li>API ouverte et documentée</li>
 							</ul>
@@ -213,6 +274,7 @@
 					<section>
 						<h2>Installable partout</h2>
 						<aside class="notes">
+							Brendan
 							<ul>
 								<li>&lt;20min sur ARM</li>
 							</ul>
@@ -221,39 +283,101 @@
 					<section>
 						<h2>Utilisable partout</h2>
 						<aside class="notes">
+							Brendan
 							<ul>
 								<li>Internationalisation</li>
 								<li>Application web + applications mobiles</li>
 							</ul>
 						</aside>
 					</section>
-				</section>
-				<section>
 					<section>
-						<h1>Organisation</h1>
-					</section>
-					<section>
-						<h2>Planification</h2>
+						<h1>Gestion de projet</h1>
 						<p style="font-size:75%">Cahier des charges <span class="fragment">&rarr; découpage</span> <span class="fragment">&rarr; priorisation</span> <span class="fragment">&rarr; estimation</span> <span class="fragment">&rarr; planning</span></p>
+						<aside class="notes">
+							Joseph
+							<ul>
+								<li>Critères évoqués précédemment -> cahier des charges</li>
+								<li>Cahier des charges → découpage → priorisation → estimation → planning</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<img src="assets/planning.png" alt="Planning prévisionnel" width="90%" />
+						<aside class="notes">
+							Joseph
+						</aside>
 					</section>
 				</section>
 				<section>
 					<section>
 						<h1>Développement</h1>
+						<aside class="notes">
+							Joseph
+						</aside>
 					</section>
 					<section>
-						<h2>Répartition</h2>
-						<ul>
-							<li><strong>Brendan</strong> : Serveur</li>
-							<li><strong>Joseph</strong> : Client</li>
-						</ul>
+						<h2>Base de données</h2>
+						<img src="assets/mcd.jpg" alt="mcd">
+						<aside class="notes">
+							Joseph
+							<ul>
+								<li>Suit le cahier des charges</li>
+								<li>SQLite3 : <ul>
+									<li>light</li>
+									<li>1 fichier/DB (+ simple export/import)</li>
+								</ul></li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h2>Client-Serveur</h2>
+						<div style="width:850px;margin:auto">
+							<div style="float:left">
+								<img src="assets/browser.png" class="plain" height="100px" />
+							</div>
+							
+							<div style="float:left">
+								<div style="float:left;margin:20px">
+									<img src="assets/arrow.png" class="plain" width="100px" /><br />
+									<small>API client</small>
+								</div>
+
+								<div style="float:left">
+									<img src="assets/server.png" class="plain" height="100px" />
+								</div>
+							</div>
+
+							<div style="float:left;margin:20px">
+								<img src="assets/double-arrow.png" class="plain" width="100px" /><br />
+								<small>API serveur</small>
+							</div>
+
+							<div>
+								<div style="float:left">
+									<img src="assets/server.png" class="plain" height="100px" />
+								</div>
+
+								<div style="float:left;margin:20px">
+									<img src="assets/arrow.png" style="transform: rotate(180deg)" class="plain" width="100px" /><br />
+									<small>API client</small>
+								</div>
+							</div>
+
+							<div style="float:left">
+								<img src="assets/browser.png" class="plain" height="100px" />
+							</div>
+						</div>
+						<aside class="notes">
+							Brendan
+							<ul>
+								<li>Client (ce qui est affiché dans le navigateur de l'utilisateur) dialogue avec serveur grâce à l'API client</li>
+								<li>Contexte décentralisé : communication de serv à serv = API pour ça</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<h2>Technologies serveur</h2>
-						<div style="width:850px;margin:auto">
+						<div style="display:inline-block;margin:auto">
 							<div style="float:left;margin-right:30px" class="fragment">
 								<img src="assets/nodejs.png" alt="Node.js" class="plain" height="150px" />
 								<p><small>Node.js</small></p>
@@ -271,10 +395,13 @@
 								<p><small>Sequelize</small></p>
 							</div>
 						</div>
+						<aside class="notes">
+							Brendan
+						</aside>
 					</section>
 					<section>
 						<h2>Technologies client</h2>
-						<div style="width:650px;margin:auto">
+						<div style="display:inline-block;margin:auto">
 							<div style="float:left;margin-right:100px" class="fragment">
 								<img src="assets/ionic.png" alt="Ionic" class="plain" height="150px" />
 								<p><small>Ionic 2</small></p>
@@ -288,10 +415,13 @@
 								<p><small>TypeScript</small></p>
 							</div>
 						</div>
+						<aside class="notes">
+							Joseph
+						</aside>
 					</section>
 					<section>
 						<h2>Technologies transverses</h2>
-						<div style="width:650px;margin:auto">
+						<div style="display:inline-block;margin:auto">
 							<div style="float:left;margin-right:100px" class="fragment">
 								<img src="assets/swagger.png" alt="Swagger" class="plain" height="150px" />
 								<p><small>Swagger</small></p>
@@ -305,58 +435,185 @@
 								<p><small>Travis</small></p>
 							</div>
 						</div>
+						<aside class="notes">
+							Brendan
+							<ul>
+								<li>Travis : + de 350 tests</li>
+							</ul>
+						</aside>
 					</section>
 				</section>
 				<section>
 					<section>
 						<h1>Fonctionnalités</h1>
+						<aside class="notes">
+							Joseph
+						</aside>
 					</section>
 					<section>
 						<h2>Posts</h2>
 						<video src="assets/posts.webm" autoplay loop controls>
 						</video>
+						<aside class="notes">
+							Joseph
+							<ul>
+								<li>Création de post avec contenu + visibilité</li>
+								<li>Visibilité = public, amis et privé</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
-						<h2>Réactions</h2>
-						<video src="assets/reactions.webm" autoplay loop controls >
+						<h2>Interactions</h2>
+						<video src="assets/interact.webm" autoplay loop controls >
 						</video>
-					</section>
-					<section>
-						<h2>Commentaires</h2>
-						<video src="assets/comments.webm" autoplay loop controls>
-						</video>
+						<aside class="notes">
+							Brendan
+							<ul>
+								<li>Like/réaction</li>
+								<li>Commentaire</li>
+								<li>Associé au post</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<h2>Amis</h2>
 						<img src="assets/friends.png" alt="Amis" height="500px">
+						<aside class="notes">
+							Joseph
+							<ul>
+								<li>Suivi</li>
+								<li>Demande d'ami : Acceptation/refus</li>
+								<li>Laisser trainer ficelle protocole ami</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h2>Sécurité</h2>
+						<ul>
+							<li class="fragment">jeton d'identification</li>
+							<li class="fragment">jeton de signature</li>
+						</ul>
+						<aside class="notes">
+							Brendan
+							<ul>
+								<li>2 types de requête : publique (si accès à du contenu public) / authentifié (si accès à du contenu restraint)</li>
+								<li>Généralement, req auth si ami</li>
+								<li>Ami = jeton id et jeton sig</li>
+								<li>jeton id = clair dans la requête (identification de l'interlocuteur)</li>
+								<li>jeton sig = utilisé pour signer la requête</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h2>Signature</h2>
+						<pre style="font-size: 40%;max-height:800px"><code style="max-height:550px" class="hljs ts">
+// Crée une signature en utilisant SHA256
+
+computeSignature(method, url, parameters, token);
+
+=> 'a1c4517a514671c9930256c4120e47a289fd97b0d92288d952da4af905acd1dd'
+						</code></pre>
+						<aside class="notes">
+							Brendan
+							<ul>
+								<li>Signer = générer une signature, preuve d'intégrité (càd aucun tiers n'a modifié la requête)</li>
+								<li>Faite à partir de la méthode de la requête, son URL, ses paramètres et le jeton sig</li>
+								<li>Se rajoute l'algo SHA256, algo de hachage non reversible = le jeton reste secret entre les deux amis (pas possible de remonter jusqu'à lui à partir de la signature)</li>
+								<li>Donne chaine de caractère (signature) ajoutée à la requête pour que l'interlocuteur puisse recalculer la sig et la comparer avec celle reçue</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h2>Difficultés recontrées</h2>
+						<ul>
+							<li class="fragment">Docs pas à jour</li>
+							<li class="fragment">Utilisation de nouveaux outils</li>
+							<li class="fragment">Conception</li>
+						</ul>
+						<aside class="notes">
+							Joseph
+							<ul>
+								<li>Docs pas à jour</li>
+								<li>Utilisation de nouveaux outils</li>
+								<li>Conception</li>
+							</ul>
+						</aside>
 					</section>
 				</section>
 				<section>
-					<h1>Et après ?</h1>
-					<ul>
-						<li>Authentification</li>
-						<li>Gestion des commentaires sur un post public</li>
-						<li>Gestion du contenu lors de la suppression d'un ami</li>
-						<li>Partage d'un post</li>
-						<li>Intégration de réseaux tiers</li>
-						<li>Design propre à Vinimay</li>
-						<li>Annuaires</li>
-						<li>Contenu enrichi</li>
-						<li>...</li>
-					</ul>
-				</section>
-				<section>
 					<h1>Conclusion</h1>
+					<section data-transition="fade">
+						<h2>Maintenant</h2>
+						<ul>
+							<li class="fragment">Preuve de concept fonctionnelle</li>
+							<li class="fragment">Fonctionnalités sociales minimales</li>
+							<li class="fragment">Maintenable</li>
+						</ul>
+						<aside class="notes">
+							Brendan
+						</aside>
+					</section>
+					<section data-transition="fade">
+						<h2>Et après ?</h2>
+						<ul>
+							<li>Authentification</li>
+							<li>Gestion du contenu lors de la suppression d'un ami</li>
+							<li>Partage d'un post</li>
+							<li>Intégration de réseaux tiers</li>
+							<li>Annuaires</li>
+							<li>Contenu enrichi</li>
+							<li>...</li>
+						</ul>
+						<aside class="notes">
+							Joseph
+							<ul>
+								<li>Prévu de continuer à travailler dessus après la fin du projet M1</li>
+								<li>Déjà pensé à quelques fonctionnalités à rajouter</li>
+								<li>Authentification</li>
+								<li>Intégration de réseaux tiers</li>
+								<li>...</li>
+							</ul>
+						</aside>
+					</section>
+					<section data-transition="fade">
+						<h2>Décentralisé</h2>
+						<ul>
+							<li class="fragment">Domaine de recherche riche</li>
+							<li class="fragment">Beaucoup à faire</li>
+						</ul>
+						<aside class="notes">
+							Brendan
+							<ul>
+								<li>Domaine de recherche riche impliquant plusieurs domaines (social, légal, technique...)</li>
+								<li>Intéressant car nécessite de revoir sa façon de penser une application (gymnastique intellectuelle)</li>
+								<li>Bcp à faire, notamment dans les applications sociales, car peu de solutions existent = grande possibilité pour expérimenter</li>
+							</ul>
+						</aside>
+					</section>
 				</section>
 				<section>
 					<h1>Remerciements</h1>
 					<p>M. Le Ru</p>
 					<p>M. Mulot</p>
 					<p>L'ISEN</p>
+					<aside class="notes">
+						Joseph
+						<ul>
+							<li>M Le Ru : tuteur, accompagné, conseils et remarques utiles</li>
+							<li>M Mulot : accepter d'ajouter le projet à la liste des sujets</li>
+							<li>L'ISEN : nous avoir fourni un cadre pour pouvoir mener à bien ce projet</li>
+						</ul>
+					</aside>
 				</section>
 				<section>
 					<h2>Merci de votre attention</h2>
 					<p>Avez-vous des questions ?</p>
+					<aside class="notes">
+						Brendan
+					</aside>
+				</section>
+				<section>
+					<img src="assets/amitie-sequence.png" alt="" class="plain" height="670px">
 				</section>
 			</div>
 		</div>
@@ -370,6 +627,7 @@
 			Reveal.initialize({
 				history: true,
 				slideNumber: true,
+				controls: false,
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
 					{ src: 'reveal.js/plugin/markdown/marked.js' },
